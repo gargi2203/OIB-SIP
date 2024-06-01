@@ -1,0 +1,142 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #004d99;
+    color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+.logo{
+    font-family: cursive;
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin-left: 100px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: #ffcc00;
+}
+
+.cta {
+    background: #ffcc00;
+    color: #004d99;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: 200px;
+}
+
+.cta:hover {
+    background: #e6b800;
+}
+
+#hero {
+    background: url('hero-image-education.png') no-repeat center center/cover;
+    color: #080808;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #0b3157;
+}
+
+.hero-button {
+    background: #ffcc00;
+    color: #004d99;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #e6b800;
+}
+
+#about, #courses, #testimonials {
+    background-color: #9cbce7;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.course-container, .testimonial-container {
+    background: linear-gradient(pink, white);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.course, .testimonial {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+}
+.testimonial :hover {
+    transform: scale(1.04);
+}
+.course :hover{
+    transform: scale(1.04);
+}
+.testimonial{
+    margin-bottom: 100px;
+}
+
+footer {
+    background: #004d99;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+

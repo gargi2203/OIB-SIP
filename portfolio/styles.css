@@ -1,0 +1,233 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background:linear-gradient(white,rgb(43, 170, 243));
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 150px;
+    height: 30px;
+}
+.logo img{
+    width: 150px;
+    height: 80px;
+    border-radius: 70px;
+}
+
+nav ul {
+    margin-left: 500px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #1d035e;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 600;
+}
+nav a:hover {
+    color: rgb(255, 94, 0);
+}
+
+#hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mainHeroSection{
+    display: flex;
+    gap: 3rem;
+}
+.myPhoto{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+}
+#photo{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: rgb(250, 248, 248);
+    text-align: left;
+}
+
+.hero-content p {
+    font-size: 1.7rem;
+    color: rgb(202, 197, 197);
+    text-align: left;
+}
+.hero-content b{
+    color: aqua;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    
+}
+
+#about{
+    background: linear-gradient(rgb(43, 170, 243),white);
+}
+#about h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.projects-container, .skills-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.project, .skill {
+    background: #e2f2f7;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+#imag{
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+}
+#imag:hover{
+    transform: scale(1.05);
+}
+.project a{
+    text-decoration: none;
+    color: rgb(3, 3, 95);
+}
+
+#projects h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#skills h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.skill img{
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+}
+.skill img:hover{
+    transform: scale(1.05);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #333;
+    color: #f18ee4;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #555;
+}
+
+footer {
+    background: linear-gradient(white,rgb(174, 174, 251));
+    color:#173d57;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 1200px) {
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    .mainHeroSection {
+        flex-direction: column;
+    }
+
+    .projects-container, .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero {
+        height: 60vh;
+    }
+
+    .projects-container, .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project, .skill {
+        max-width: 100%;
+    }
+
+    .myPhoto, #photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainHeroSection {
+        gap: 1rem;
+    }
+}
+
